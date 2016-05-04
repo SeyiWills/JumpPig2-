@@ -8,24 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		6C60F4741CDA15D200A3F79B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F4731CDA15D200A3F79B /* AppDelegate.swift */; };
-		6C60F4761CDA15D200A3F79B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4751CDA15D200A3F79B /* GameScene.sks */; };
-		6C60F4781CDA15D200A3F79B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F4771CDA15D200A3F79B /* GameScene.swift */; };
-		6C60F47A1CDA15D200A3F79B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F4791CDA15D200A3F79B /* GameViewController.swift */; };
 		6C60F47D1CDA15D300A3F79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F47B1CDA15D300A3F79B /* Main.storyboard */; };
-		6C60F47F1CDA15D300A3F79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F47E1CDA15D300A3F79B /* Assets.xcassets */; };
 		6C60F4821CDA15D300A3F79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4801CDA15D300A3F79B /* LaunchScreen.storyboard */; };
+		6C60F48A1CDA163300A3F79B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F4891CDA163300A3F79B /* GameScene.swift */; };
+		6C60F48C1CDA163900A3F79B /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F48B1CDA163900A3F79B /* EndGameScene.swift */; };
+		6C60F48E1CDA164000A3F79B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F48D1CDA164000A3F79B /* GameState.swift */; };
+		6C60F4901CDA164600A3F79B /* GameObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F48F1CDA164600A3F79B /* GameObjectNode.swift */; };
+		6C60F4921CDA164E00A3F79B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C60F4911CDA164E00A3F79B /* GameViewController.swift */; };
+		6C60F4941CDA165500A3F79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4931CDA165500A3F79B /* Assets.xcassets */; };
+		6C60F4961CDA165C00A3F79B /* StarPing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4951CDA165C00A3F79B /* StarPing.wav */; };
+		6C60F4981CDA166200A3F79B /* Level01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4971CDA166200A3F79B /* Level01.plist */; };
+		6C60F49D1CDA19F800A3F79B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C60F49B1CDA19F800A3F79B /* Fabric.framework */; };
+		6C60F49E1CDA19F800A3F79B /* GameAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C60F49C1CDA19F800A3F79B /* GameAnalytics.framework */; };
+		6C60F4AC1CDA3CD200A3F79B /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A01CDA3CD200A3F79B /* Contents.json */; };
+		6C60F4AD1CDA3CD200A3F79B /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A11CDA3CD200A3F79B /* Icon-40.png */; };
+		6C60F4AE1CDA3CD200A3F79B /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A21CDA3CD200A3F79B /* Icon-40@2x.png */; };
+		6C60F4AF1CDA3CD200A3F79B /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A31CDA3CD200A3F79B /* Icon-40@3x.png */; };
+		6C60F4B01CDA3CD200A3F79B /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A41CDA3CD200A3F79B /* Icon-60@2x.png */; };
+		6C60F4B11CDA3CD200A3F79B /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A51CDA3CD200A3F79B /* Icon-60@3x.png */; };
+		6C60F4B21CDA3CD200A3F79B /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A61CDA3CD200A3F79B /* Icon-76.png */; };
+		6C60F4B31CDA3CD200A3F79B /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A71CDA3CD200A3F79B /* Icon-76@2x.png */; };
+		6C60F4B41CDA3CD200A3F79B /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A81CDA3CD200A3F79B /* Icon-83.5@2x.png */; };
+		6C60F4B51CDA3CD200A3F79B /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4A91CDA3CD200A3F79B /* Icon-Small.png */; };
+		6C60F4B61CDA3CD200A3F79B /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4AA1CDA3CD200A3F79B /* Icon-Small@2x.png */; };
+		6C60F4B71CDA3CD200A3F79B /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C60F4AB1CDA3CD200A3F79B /* Icon-Small@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C60F4701CDA15D200A3F79B /* JumpPig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpPig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C60F4731CDA15D200A3F79B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C60F4751CDA15D200A3F79B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		6C60F4771CDA15D200A3F79B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		6C60F4791CDA15D200A3F79B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6C60F47C1CDA15D300A3F79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6C60F47E1CDA15D300A3F79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C60F4811CDA15D300A3F79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C60F4831CDA15D300A3F79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C60F4891CDA163300A3F79B /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6C60F48B1CDA163900A3F79B /* EndGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
+		6C60F48D1CDA164000A3F79B /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		6C60F48F1CDA164600A3F79B /* GameObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObjectNode.swift; sourceTree = "<group>"; };
+		6C60F4911CDA164E00A3F79B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6C60F4931CDA165500A3F79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C60F4951CDA165C00A3F79B /* StarPing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = StarPing.wav; sourceTree = "<group>"; };
+		6C60F4971CDA166200A3F79B /* Level01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level01.plist; sourceTree = "<group>"; };
+		6C60F49B1CDA19F800A3F79B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
+		6C60F49C1CDA19F800A3F79B /* GameAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameAnalytics.framework; path = ../GameAnalytics.framework; sourceTree = "<group>"; };
+		6C60F4A01CDA3CD200A3F79B /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		6C60F4A11CDA3CD200A3F79B /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		6C60F4A21CDA3CD200A3F79B /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		6C60F4A31CDA3CD200A3F79B /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		6C60F4A41CDA3CD200A3F79B /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		6C60F4A51CDA3CD200A3F79B /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		6C60F4A61CDA3CD200A3F79B /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		6C60F4A71CDA3CD200A3F79B /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		6C60F4A81CDA3CD200A3F79B /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		6C60F4A91CDA3CD200A3F79B /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		6C60F4AA1CDA3CD200A3F79B /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		6C60F4AB1CDA3CD200A3F79B /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C60F49D1CDA19F800A3F79B /* Fabric.framework in Frameworks */,
+				6C60F49E1CDA19F800A3F79B /* GameAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +96,42 @@
 		6C60F4721CDA15D200A3F79B /* JumpPig */ = {
 			isa = PBXGroup;
 			children = (
+				6C60F49B1CDA19F800A3F79B /* Fabric.framework */,
+				6C60F49C1CDA19F800A3F79B /* GameAnalytics.framework */,
 				6C60F4731CDA15D200A3F79B /* AppDelegate.swift */,
-				6C60F4751CDA15D200A3F79B /* GameScene.sks */,
-				6C60F4771CDA15D200A3F79B /* GameScene.swift */,
-				6C60F4791CDA15D200A3F79B /* GameViewController.swift */,
+				6C60F4891CDA163300A3F79B /* GameScene.swift */,
+				6C60F48B1CDA163900A3F79B /* EndGameScene.swift */,
+				6C60F48D1CDA164000A3F79B /* GameState.swift */,
+				6C60F48F1CDA164600A3F79B /* GameObjectNode.swift */,
+				6C60F4911CDA164E00A3F79B /* GameViewController.swift */,
 				6C60F47B1CDA15D300A3F79B /* Main.storyboard */,
-				6C60F47E1CDA15D300A3F79B /* Assets.xcassets */,
+				6C60F4931CDA165500A3F79B /* Assets.xcassets */,
+				6C60F49F1CDA3CD200A3F79B /* AppIcon.appiconset */,
+				6C60F4951CDA165C00A3F79B /* StarPing.wav */,
+				6C60F4971CDA166200A3F79B /* Level01.plist */,
 				6C60F4801CDA15D300A3F79B /* LaunchScreen.storyboard */,
 				6C60F4831CDA15D300A3F79B /* Info.plist */,
 			);
 			path = JumpPig;
+			sourceTree = "<group>";
+		};
+		6C60F49F1CDA3CD200A3F79B /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				6C60F4A01CDA3CD200A3F79B /* Contents.json */,
+				6C60F4A11CDA3CD200A3F79B /* Icon-40.png */,
+				6C60F4A21CDA3CD200A3F79B /* Icon-40@2x.png */,
+				6C60F4A31CDA3CD200A3F79B /* Icon-40@3x.png */,
+				6C60F4A41CDA3CD200A3F79B /* Icon-60@2x.png */,
+				6C60F4A51CDA3CD200A3F79B /* Icon-60@3x.png */,
+				6C60F4A61CDA3CD200A3F79B /* Icon-76.png */,
+				6C60F4A71CDA3CD200A3F79B /* Icon-76@2x.png */,
+				6C60F4A81CDA3CD200A3F79B /* Icon-83.5@2x.png */,
+				6C60F4A91CDA3CD200A3F79B /* Icon-Small.png */,
+				6C60F4AA1CDA3CD200A3F79B /* Icon-Small@2x.png */,
+				6C60F4AB1CDA3CD200A3F79B /* Icon-Small@3x.png */,
+			);
+			path = AppIcon.appiconset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +144,7 @@
 				6C60F46C1CDA15D200A3F79B /* Sources */,
 				6C60F46D1CDA15D200A3F79B /* Frameworks */,
 				6C60F46E1CDA15D200A3F79B /* Resources */,
+				6C60F4991CDA19B400A3F79B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,22 +194,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C60F4761CDA15D200A3F79B /* GameScene.sks in Resources */,
+				6C60F4961CDA165C00A3F79B /* StarPing.wav in Resources */,
+				6C60F4B01CDA3CD200A3F79B /* Icon-60@2x.png in Resources */,
 				6C60F4821CDA15D300A3F79B /* LaunchScreen.storyboard in Resources */,
-				6C60F47F1CDA15D300A3F79B /* Assets.xcassets in Resources */,
+				6C60F4B31CDA3CD200A3F79B /* Icon-76@2x.png in Resources */,
+				6C60F4941CDA165500A3F79B /* Assets.xcassets in Resources */,
+				6C60F4B41CDA3CD200A3F79B /* Icon-83.5@2x.png in Resources */,
+				6C60F4AD1CDA3CD200A3F79B /* Icon-40.png in Resources */,
+				6C60F4B21CDA3CD200A3F79B /* Icon-76.png in Resources */,
+				6C60F4B51CDA3CD200A3F79B /* Icon-Small.png in Resources */,
+				6C60F4B71CDA3CD200A3F79B /* Icon-Small@3x.png in Resources */,
+				6C60F4AF1CDA3CD200A3F79B /* Icon-40@3x.png in Resources */,
 				6C60F47D1CDA15D300A3F79B /* Main.storyboard in Resources */,
+				6C60F4AE1CDA3CD200A3F79B /* Icon-40@2x.png in Resources */,
+				6C60F4981CDA166200A3F79B /* Level01.plist in Resources */,
+				6C60F4B61CDA3CD200A3F79B /* Icon-Small@2x.png in Resources */,
+				6C60F4AC1CDA3CD200A3F79B /* Contents.json in Resources */,
+				6C60F4B11CDA3CD200A3F79B /* Icon-60@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C60F4991CDA19B400A3F79B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 6b0e950d8d434a54a5638ac811f6b52eef61093a b23fac93abdc39d234f47d5cc9e176e88698ea3fe60d09e40817d41ffbb34eef";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C60F46C1CDA15D200A3F79B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C60F4781CDA15D200A3F79B /* GameScene.swift in Sources */,
-				6C60F47A1CDA15D200A3F79B /* GameViewController.swift in Sources */,
+				6C60F4901CDA164600A3F79B /* GameObjectNode.swift in Sources */,
+				6C60F48A1CDA163300A3F79B /* GameScene.swift in Sources */,
+				6C60F48E1CDA164000A3F79B /* GameState.swift in Sources */,
+				6C60F48C1CDA163900A3F79B /* EndGameScene.swift in Sources */,
+				6C60F4921CDA164E00A3F79B /* GameViewController.swift in Sources */,
 				6C60F4741CDA15D200A3F79B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +355,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = JumpPig/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Oluwaseyi-Williams.JumpPig";
@@ -269,6 +370,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = JumpPig/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Oluwaseyi-Williams.JumpPig";
